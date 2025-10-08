@@ -1,49 +1,39 @@
-# =================================================================
-# || 一个为您的网站定制的、简化的 GitHub Actions 构建脚本 ||
-# =================================================================
+# 为 siyisun.github.io 修正过的工作流脚本
 
 name: Build and Deploy Hugo Site
 
 on:
-  # 在推送到 main 分支时运行
   push:
-    branches: ["master"] # 如果您的主分支名叫 master, 请将这里的 main 改为 master
-
-  # 允许您在 Actions 页面手动运行此工作流程
+    branches: ["master"] # 已根据您的信息，修正为 "master"
   workflow_dispatch:
 
-# 设置 GITHUB_TOKEN 的权限以允许部署到 GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 只允许一个并发部署，跳过在进行中运行之间排队的运行。
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
   build:
-    runs-on: ubuntu-latest # 在最新的 Ubuntu 系统上运行
+    runs-on: ubuntu-latest
     steps:
-      # 步骤 1: 检出您的仓库代码
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      # 步骤 2: 安装 Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest' # 使用一个较新的 Hugo 版本
+          hugo-version: 'latest'
           extended: true
 
-      # 步骤 3: 构建网站
-      # (我们移除了所有 git 和 hugo modules 相关的命令)
       - name: Build
         run: hugo --minify
 
-      # 步骤 4: 上传构建好的网站文件
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -56,7 +46,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      # 步骤 5: 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
