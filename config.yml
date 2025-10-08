@@ -21,7 +21,7 @@ params:
     enabled: true # 确保这里是 true
     title: "SIYI"
     subtitle: "MBTI: ENFJ"
-    imageUrl: "" # 留空或填入你的头像图片链接, 例如 "/images/avatar.png"
+    imageUrl: "/images/白底2509-裁切.jpg"
     imageWidth: 140
     imageHeight: 140
     buttons:
