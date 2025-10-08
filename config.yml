@@ -3,7 +3,7 @@
 # =================================================
 baseURL: "https://siyisun.github.io/"
 title: "SIYI SUN"
-theme: [hugo-PaperMod]
+# theme: [hugo-PaperMod]
 languageCode: zh-cn # 语言设置为中文
 copyright: "siyi sun" # 网站底部的版权信息
 
