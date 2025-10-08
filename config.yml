@@ -22,8 +22,8 @@ params:
     title: "SIYI"
     subtitle: "MBTI: ENFJ"
     imageUrl: "/images/白底证件照2509.jpg"
-    imageWidth: 140
-    imageHeight: 140
+   # imageWidth: 140
+   # imageHeight: 140
     buttons:
       - name: 📝 博客
         url: "/posts"
