@@ -35,7 +35,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.125.4' # 使用一个较新的 Hugo 版本
+          hugo-version: 'latest' # 使用一个较新的 Hugo 版本
           extended: true
 
       # 步骤 3: 构建网站
