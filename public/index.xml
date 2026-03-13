@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SIYI SUN</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on SIYI SUN</description>
+    <generator>Hugo -- 0.157.0</generator>
+    <language>zh-cn</language>
+    <copyright>Siyi Sun</copyright>
+    <lastBuildDate>Tue, 07 Oct 2025 20:50:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的第一篇文章</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Tue, 07 Oct 2025 20:50:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;p&gt;你好，世界！hello world&lt;/p&gt;
+&lt;p&gt;这是我网站上的第一篇文章。
+我成功地配置了 &lt;code&gt;config.yml&lt;/code&gt; 文件，并创建了 &lt;code&gt;content&lt;/code&gt; 文件夹。
+接下来，我将在这里分享我的想法和作品。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

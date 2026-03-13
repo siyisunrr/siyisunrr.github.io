@@ -1,10 +1,7 @@
-# =================================================
-# ||         基础设置 (核心部分)             ||
-# =================================================
 baseURL: "https://siyisunrr.github.io/"
 title: "SIYI SUN"
-languageCode: zh-cn # 语言设置为中文
-copyright: "siyi sun" # 网站底部的版权信息
+languageCode: zh-cn
+copyright: "Siyi Sun"
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -12,53 +9,39 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 
-# =================================================
-# ||              主页设置 (个人信息)         ||
-# =================================================
 params:
-  # 个人资料模式 (现在是左侧文字，右侧图片)
   profileMode:
-    enabled: true        # 确保这里是 true，重新启用个人简介模块
-    title: "SIYI SUN"    # 您的名字或网站标题
-    subtitle: "MSE M.S. @ THU, NanoPhotonics\n\nEnergy = milk × coffee²" # 这里放您的简介和座右铭，\n\n是换行符
-    imageUrl: "/images/白底证件照2509.jpg" # 您的头像路径
-    imageOnRight: true   # <<--- 新增这一行：让图片显示在右侧
-    imageWidth: 140    # <<--- 再次确认这两行是否已删除，非常重要！
-    imageHeight: 188   # <<--- 如果还在，请删除它们
+    enabled: true
+    title: "Siyi Sun &nbsp; 孙思毅"
+    subtitle: >
+      B.Eng. in Materials Science @ [Nanjing University of Posts and Telecommunications (NJUPT)](https://www.njupt.edu.cn/)<br>
+      Incoming M.S. in Materials Science @ [Tsinghua University (THU)](https://www.tsinghua.edu.cn/)<br>
+      Research Interest: Optoelectronic Materials & NanoPhotonics
+    imageUrl: "/images/profile.jpg"
+    imageWidth: 180
+    imageHeight: 180
 
-    buttons:             # 这些是简介下方的按钮
-      - name: RSS订阅
-        url: "/index.xml" # RSS订阅的通用链接
-      - name: 我
-        url: "/about"     # 指向您的“关于我”页面
+    buttons:
+      - name: About Me
+        url: "/about"
+      - name: Blog
+        url: "/posts/"
 
-  # 页面顶部和底部的社交图标
   socialIcons:
     - name: github
       url: "https://github.com/siyisunrr"
     - name: email
-      url: "noahsun119@gmail.com"
-    # 如果需要，可以取消下面的注释并修改链接
-    # - name: bilibili
-    #   url: "【你的B站链接】"
-    # - name: zhihu
-    #   url: "【你的知乎链接】"
+      url: "mailto:noahsun119@gmail.com"
 
-  # 作者信息
-  author: ["SIYI"]
+  author: ["Siyi Sun"]
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
 
-  # 网站整体显示设置
-  defaultTheme: auto # 自动切换白天/夜间模式
-  ShowReadingTime: true # 显示文章阅读时间
-  ShowShareButtons: true # 显示分享按钮
-  ShowPostNavLinks: true # 显示上一篇/下一篇文章导航
-  ShowBreadCrumbs: true # 显示面包屑导航
-  ShowCodeCopyButtons: true # 代码块显示复制按钮
-  ShowToc: true # 显示文章目录
-
-# =================================================
-# ||              网站菜单设置               ||
-# =================================================
 menu:
   main:
     - identifier: posts
