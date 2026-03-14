@@ -14,7 +14,7 @@
 /* --- 核心：CSS Grid 两列布局，约 70%/30% --- */
 .profile .profile_inner {
     display: grid;
-    grid-template-columns: 1fr 190px;
+    grid-template-columns: 1fr 240px;
     column-gap: 42px;
     row-gap: 8px;
     text-align: left;
