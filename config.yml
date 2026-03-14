@@ -34,9 +34,9 @@ params:
       where I studied Nobel Prize physics experiments on holography and optical tweezers with Prof. [Mark Dickinson](https://research.manchester.ac.uk/en/persons/mark.dickinson/).<br><br>
       *Research Interests:* Optoelectronic Materials, NanoPhotonics & Chip Packaging<br><br>
       <img src="/images/logos/gmail.png" class="inline-logo"> [noahsun119@gmail.com](mailto:noahsun119@gmail.com) / <img src="/images/logos/blog.png" class="inline-logo"> [Blog](/posts/)
-    imageUrl: "images/homepage_pic.jpg"
+    imageUrl: "images/london.png"
     imageTitle: "Siyi Sun"
-    imageCaption: "(at Shuangqiao Valley, Mount Siguniang, China)"
+    imageCaption: "(at London)"
 
   socialIcons:
     - name: github
