@@ -3,6 +3,11 @@
    左文字 + 右头像，学术衬线体
    ============================================ */
 
+/* --- 覆盖 PaperMod 全局内容宽度 --- */
+.main {
+    max-width: calc(1024px + var(--gap) * 2) !important;
+}
+
 /* --- 整体容器：取消默认的全屏垂直居中 --- */
 .main .profile {
     min-height: auto;
@@ -19,8 +24,8 @@
     row-gap: 8px;
     text-align: left;
     align-items: start;
-    max-width: 840px;
-    margin: 0 auto;
+    max-width: none;
+    width: 100%;
 }
 
 /* --- 头像区域（figure 整体）：固定在右列，与标题顶部对齐 --- */
@@ -96,8 +101,9 @@
 
 /* --- 首页内容区（News / Publications） --- */
 .home-content {
-    max-width: 840px;
-    margin: -20px auto 0;
+    max-width: none;
+    width: 100%;
+    margin: -20px 0 0;
     padding: 0 0 40px;
 }
 
