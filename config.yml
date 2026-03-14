@@ -9,23 +9,25 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
   profileMode:
     enabled: true
-    title: "Siyi Sun &nbsp; 孙思毅"
+    title: "Siyi Sun 孙思毅"
     subtitle: >
-      B.Eng. in Materials Science @ [Nanjing University of Posts and Telecommunications (NJUPT)](https://www.njupt.edu.cn/)<br>
-      Incoming M.S. in Materials Science @ [Tsinghua University (THU)](https://www.tsinghua.edu.cn/)<br>
-      Research Interest: Optoelectronic Materials & NanoPhotonics
-    imageUrl: "/images/profile.jpg"
-    imageWidth: 180
-    imageHeight: 180
-
-    buttons:
-      - name: About Me
-        url: "/about"
-      - name: Blog
-        url: "/posts/"
+      B.Eng. in Materials Science @ <img src="/images/logos/njupt.png" class="inline-logo"> **[Nanjing University of Posts and Telecommunications (NJUPT)](https://www.njupt.edu.cn/)**.<br>
+      Incoming M.S. in Materials Science @ <img src="/images/logos/thu.png" class="inline-logo"> **[Tsinghua University SIGS (THU)](https://www.sigs.tsinghua.edu.cn/)**.<br>
+      Summer School @ <img src="/images/logos/manchester.png" class="inline-logo"> **[The University of Manchester](https://www.manchester.ac.uk/)**.<br>
+      Visiting Student @ **[Nanophotonics Materials Lab](https://pengsy.lab.westlake.edu.cn/)**, <img src="/images/logos/westlake.png" class="inline-logo"> [Westlake University](https://www.westlake.edu.cn/).<br><br>
+      *Research Interest:* Optoelectronic Materials & NanoPhotonics<br><br>
+      [noahsun119@gmail.com](mailto:noahsun119@gmail.com) / [Blog](/posts/)
+    imageUrl: "images/homepage_pic.jpg"
+    imageTitle: "Siyi Sun"
+    imageCaption: "(at Shuangqiao Valley, Mount Siguniang, China)"
 
   socialIcons:
     - name: github
@@ -43,20 +45,4 @@ params:
   ShowToc: true
 
 menu:
-  main:
-    - identifier: posts
-      name: 博客
-      url: /posts/
-      weight: 10
-    - identifier: portfolio
-      name: 作品集
-      url: /portfolio/
-      weight: 20
-    - identifier: tags
-      name: 标签
-      url: /tags/
-      weight: 30
-    - identifier: search
-      name: 搜索 🔍
-      url: /search/
-      weight: 40
+  main: []

@@ -2,6 +2,11 @@
 
 {{- if (and site.Params.profileMode.enabled .IsHome) }}
 {{- partial "index_profile.html" . }}
+{{- if .Content }}
+<div class="home-content">
+  {{ .Content }}
+</div>
+{{- end }}
 {{- else }} {{/* if not profileMode */}}
 
 {{- if not .IsHome | and .Title }}

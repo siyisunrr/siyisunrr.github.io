@@ -2,6 +2,7 @@
     {{- with site.Params.profileMode }}
     <div class="profile_inner">
         {{- if .imageUrl -}}
+        <figure class="profile-figure">
         {{- $img := "" }}
         {{- if not (urls.Parse .imageUrl).IsAbs }}
             {{- $img = resources.Get .imageUrl }}
@@ -29,6 +30,10 @@
         <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
             height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
         {{- end }}
+        {{- with site.Params.profileMode.imageCaption }}
+            <figcaption class="profile-caption">{{ . | markdownify }}</figcaption>
+        {{- end }}
+        </figure>
         {{- end }}
         <h1>{{ .title | default site.Title | markdownify }}</h1>
         <span>{{ .subtitle | markdownify }}</span>
