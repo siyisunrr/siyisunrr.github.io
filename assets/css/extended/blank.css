@@ -52,14 +52,16 @@
     margin-top: 6px;
 }
 
-/* --- 标题：衬线体 + 加粗 --- */
+/* --- 标题：宽扁粗体无衬线 --- */
 .profile .profile_inner > h1 {
     grid-column: 1;
     margin: 0 0 6px 0;
-    font-family: "Times New Roman", "Noto Serif SC", Georgia, serif;
-    font-size: 1.7rem;
-    font-weight: 700;
-    letter-spacing: 0.3px;
+    font-family: "Arial Black", "Helvetica Neue", "Noto Sans SC", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    transform: scaleY(0.96);
+    transform-origin: top left;
 }
 
 /* --- 副标题：正文风格 --- */
@@ -67,7 +69,7 @@
     grid-column: 1;
     line-height: 1.6;
     font-size: 0.92rem;
-    color: var(--secondary);
+    color: var(--primary);
     letter-spacing: 0.2px;
 }
 
@@ -103,7 +105,7 @@
 .home-content {
     max-width: none;
     width: 100%;
-    margin: -20px 0 0;
+    margin: -40px 0 0;
     padding: 0 0 40px;
 }
 
@@ -113,7 +115,7 @@
     font-weight: 700;
     margin: 20px 0 12px;
     padding-bottom: 6px;
-    border-bottom: 2px solid var(--border);
+    border-bottom: 1px solid #333;
     color: #8b1a1a;
 }
 
@@ -131,12 +133,12 @@
     padding: 6px 0;
     font-size: 0.92rem;
     line-height: 1.6;
-    color: var(--secondary);
-}
-
-.home-content ul li strong {
     color: var(--primary);
 }
+
+.home-content .year-2026 { color: #b45309; font-weight: 700; }
+.home-content .year-2025 { color: #1a7f5a; font-weight: 700; }
+.home-content .year-2024 { color: #6d28d9; font-weight: 700; }
 
 .home-content a {
     color: #1a4d8f;
@@ -151,7 +153,7 @@
 
 .home-content p {
     font-size: 0.92rem;
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 /* --- 手机端：回落为单列居中 --- */

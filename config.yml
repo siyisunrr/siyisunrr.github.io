@@ -17,7 +17,7 @@ markup:
 params:
   profileMode:
     enabled: true
-    title: "Siyi Sun 孙思毅"
+    title: "Siyi Sun &thinsp; 孙思毅"
     subtitle: >
       I am an incoming M.S. student in New Energy Technology at
       <img src="/images/logos/thu.png" class="inline-logo"> **[Tsinghua University](https://www.tsinghua.edu.cn/)**.
@@ -31,9 +31,9 @@ params:
       on neuromorphic computing for memristors and phase segregation in mixed-halide perovskites.
       In the summer of 2025, I attended a summer school at
       <img src="/images/logos/manchester.png" class="inline-logo"> **[The University of Manchester](https://www.manchester.ac.uk/)**,
-      where I studied Nobel Prize physics experiments on holography and optical tweezers with Prof. Mark Dickinson.<br><br>
+      where I studied Nobel Prize physics experiments on holography and optical tweezers with Prof. [Mark Dickinson](https://research.manchester.ac.uk/en/persons/mark.dickinson/).<br><br>
       *Research Interests:* Optoelectronic Materials, NanoPhotonics & Chip Packaging<br><br>
-      <img src="/images/logos/gmail.png" class="inline-logo"> [noahsun119@gmail.com](mailto:noahsun119@gmail.com) / [Blog](/posts/)
+      <img src="/images/logos/gmail.png" class="inline-logo"> [noahsun119@gmail.com](mailto:noahsun119@gmail.com) / <img src="/images/logos/blog.png" class="inline-logo"> [Blog](/posts/)
     imageUrl: "images/homepage_pic.jpg"
     imageTitle: "Siyi Sun"
     imageCaption: "(at Shuangqiao Valley, Mount Siguniang, China)"
